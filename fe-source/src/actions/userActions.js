@@ -2,6 +2,7 @@ import * as types from "./actionTypes"
 import request from "./request"
 
 export function login(json, history) {
+
   return dispatch => {
     return request(`/api/v1/user/login`, {
       method: "POST",
